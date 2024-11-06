@@ -1,0 +1,87 @@
+[
+  {
+      "type": "Vegetable",
+      "name": "Calabrese Broccoli",
+      "actualPrice": "20.00",
+      "afterPrice": "13.00",
+      "image": "/Images/Brocoli.svg"
+  },
+  {
+      "type": "Fresh",
+      "name": "Fresh Banana Fruites",
+      "actualPrice": "20.00",
+      "afterPrice": "14.00",
+      "image": "/Images/Banana.svg"
+  },
+  {
+      "type": "Millets",
+      "name": "White Nuts",
+      "actualPrice": "20.00",
+      "afterPrice": "17.00",
+      "image": "/Images/Nuts.svg"
+  },
+  {
+    "type": "Vegetable",
+    "name": "Vegan Red Tomato",
+    "actualPrice": "20.00",
+    "afterPrice": "13.00",
+    "image": "/Images/Tomato.svg"
+  },
+  {
+      "type": "Health",
+      "name": "Mung Bean",
+      "actualPrice": "20.00",
+      "afterPrice": "11.00",
+      "image": "/Images/MungBean.svg"
+  },
+  {
+      "type": "Nuts",
+      "name": "Brown Hazelnut",
+      "actualPrice": "20.00",
+      "afterPrice": "17.00",
+      "image": "/Images/BrownHazelnut.svg"
+  },
+  {
+      "type": "Fresh",
+      "name": "Eggs",
+      "actualPrice": "20.00",
+      "afterPrice": "11.00",
+      "image": "/Images/Eggs.svg"
+  },
+  {
+      "type": "Fresh",
+      "name": "Zelco Suji Elaichi Rusk",
+      "actualPrice": "20.00",
+      "afterPrice": "10.00",
+      "image": "/Images/Bread.svg"
+  },
+  {
+      "type": "Health",
+      "name": "Cocumber",
+      "actualPrice": "20.00",
+      "afterPrice": "13.00",
+      "image": "/Images/Cocumber.svg"
+  },
+  {
+      "type": "Nuts",
+      "name": "White Hazelnut",
+      "actualPrice": "15.00",
+      "afterPrice": "9.00",
+      "image": "/Images/WhiteHazelnut.svg"
+  },
+  {
+      "type": "Fresh",
+      "name": "Fresh Corn",
+      "actualPrice": "20.00",
+      "afterPrice": "13.00",
+      "image": "/Images/FreshCorn.svg"
+  },
+  {
+      "type": "Fresh",
+      "name": "Organic Almonds",
+      "actualPrice": "20.00",
+      "afterPrice": "13.00",
+      "image": "/Images/Almonds.svg"
+  }
+  
+]
