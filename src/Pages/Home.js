@@ -562,7 +562,7 @@ const HeroSection = () => {
         container spacing={3} justifyContent="center" alignItems="center"
         sx={{
           backgroundColor: "#F1F8F4",
-          height: '600px',
+          height:{lg:'600px'},
           mt: { xs: 80, sm: 10, md: 5 }
         }}
       >

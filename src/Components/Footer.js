@@ -10,7 +10,7 @@ const Footer = () => {
   
   return (
     <>
-    <div style={{ margin: 0, padding: 0,overflow:'hidden',objectFit:'contain' }}>
+    <div style={{ margin: 0, padding: 0,overflow:'hidden',objectFit:'contain',marginTop:'3%' }}>
       <Box sx={{ position: 'relative',display:'flex',justifyContent:'center',overflow:'hidden' 
        }}>
         <Box

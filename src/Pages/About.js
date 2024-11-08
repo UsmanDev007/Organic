@@ -1,52 +1,17 @@
 import React from 'react'
-import { styled } from '@mui/system';
 import { Box,Grid2,Typography } from '@mui/material';
-import AboutBanner from '../Images/AboutBanner.svg'
 import Tractor from '../Images/Tractor.svg'
 import StyledButton from '../Components/Button'
 import ChemicalPlant from '../Images/Chemical Plant.svg'
 import Grapes from '../Images/Grapes.svg'
-const HeroContainer = styled(Box)(({ theme }) => ({
-  position: 'relative',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  minHeight: '41.67vh',
-  backgroundImage: `url(${AboutBanner})`,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  padding: theme.spacing(4),
-  [theme.breakpoints.down('sm')]: {
-    padding: theme.spacing(2),
-    backgroundPosition: 'center',
-  },
-}));
-
-const ContentBox = styled(Box)(({ theme }) => ({
-  maxWidth: '600px',
-  [theme.breakpoints.down('sm')]: {
-    maxWidth: '100%',
-  },
-}));
+import WhyChoose from '../Components/WhyChoose'
+import Hero from '../Components/Hero';
+import AboutBanner from '../Images/AboutBanner.svg';
+import Experts from '../Components/Experts'
 const About = () => {
   return (
     <>
-      <HeroContainer sx={{ mt: 5 }}>
-        <ContentBox>
-        <Typography 
-        sx={{textAlign:'center',width: '290px', height: '82px', color: '#274C5B',
-          fontFamily: "Roboto",
-          fontSize: "70px",
-          fontWeight: 800,
-          lineHeight: "82.03px",
-          
-          
-
-         }}>
-          About Us
-        </Typography>
-        </ContentBox>
-      </HeroContainer>
+         <Hero image={AboutBanner} text="About Us"/>        
       {/* About */}
       <Box sx={{ maxWidth: '1920px', mx: 'auto', p: 2, mt: '10%', }}>
         <Grid2 container spacing={2} sx={{ justifyContent: 'center', }}>
@@ -151,7 +116,10 @@ const About = () => {
           </Grid2>
         </Grid2>
       </Box>
-      {/*  */}
+      {/* whyChooseComponent */}
+       <WhyChoose/>
+       {/* Experts */}
+       <Experts/>
     </>
   )
 }
