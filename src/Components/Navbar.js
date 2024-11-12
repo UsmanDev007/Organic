@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
-const pages = ['Home', 'About', 'OurTeam', 'Shop', 'Project', 'News'];
+const pages = ['Home', 'About', 'OurTeam', 'Shop', 'Project', 'Contact'];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = useState(null);

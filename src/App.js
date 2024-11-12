@@ -5,7 +5,7 @@ import About from "./Pages/About";
 import Team from "./Pages/Team";
 import Shop from "./Pages/Shop";
 import Project from "./Pages/Project";
-import News from "./Pages/News";
+import Contact from "./Pages/Contact";
 import Footer from "./Components/Footer";
 function App() {
   return (
@@ -13,12 +13,12 @@ function App() {
        
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/ourteam" element={<Team />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/project" element={<Project />} />
-        <Route path="/news" element={<News />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer/>   
    </>    
