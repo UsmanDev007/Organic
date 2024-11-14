@@ -1,10 +1,11 @@
 import { Box, Card, CardContent, CardMedia, Chip, Divider, Grid2, Typography} from '@mui/material';
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Star from '../Images/Star.svg'
 const VegCards = () => {
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
-    
+    const navigate=useNavigate();
     useEffect(() => {
         fetch('/VegCards.json')
             .then(response => {
@@ -27,15 +28,19 @@ const VegCards = () => {
               if (!data) {
                   return <div>Loading...</div>;
              }
+        //  usenavigate to push the data to other component by click
+        const handleCardClick=(id)=>{
+          navigate(`/shop/${id}`)
+        }
 
     return (
       <Box sx={{ maxWidth:'1200px',mx: 'auto', minHeight: '100vh', p: 2 }}>
       <Grid2 container spacing={2} sx={{ justifyContent: 'center' }}>
         {data.map((item) => (
-          <Grid2
+          <Grid2 onClick={()=>handleCardClick(item.id)}
           size={{xs:12, sm:6, md:4, lg:3}}
             key={item.id}
-            sx={{ display: 'flex', justifyContent: 'center' }}
+            sx={{ display: 'flex', justifyContent: 'center',cursor:'pointer' }}
           >
             <Box sx={{ maxWidth: '335px', maxHeight: '483px', width: '100%' }}>
               <Card sx={{ boxShadow: 2, borderRadius: '30px', backgroundColor: '#F9F8F8' }}>

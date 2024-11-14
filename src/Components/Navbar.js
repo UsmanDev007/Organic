@@ -15,8 +15,39 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
-const pages = ['Home', 'About', 'Services', 'Shop', 'Project', 'Contact'];
-
+// const navbar = ['Home', 'About', 'Services', 'Shop', 'Project', 'Contact'];
+const navbar = [
+    {
+      id:"1",
+      label:"Home",
+      path:"/"
+    },
+    {
+      id:"2",
+      label:"About",
+      path:"/about"
+    },
+    {
+      id:"3",
+      label:"Services",
+      path:"/services"
+    },
+    {
+      id:"4",
+      label:"Shop",
+      path:"/shop"
+    },
+    {
+      id:"5",
+      label:"Project",
+      path:"/project"
+    },
+    {
+      id:"6",
+      label:"Contact",
+      path:"/contact"
+    }
+];
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
 
@@ -107,11 +138,11 @@ function Navbar() {
               sx={{ display: { xs: 'block', md: 'none' }, width: '100%' }}
               disableScrollLock
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+              {navbar.map((page) => (
+                <MenuItem key={page.id} onClick={handleCloseNavMenu}>
                   <Typography
                      component={Link} // Use Link for routing
-                     to={`/${page.toLowerCase()}`} // Dynamic path based on page name
+                     to={`${page.path.toLowerCase()}`} // Dynamic path based on page name
                     sx={{
                       fontFamily: 'Roboto',
                       fontSize: '20px',
@@ -122,7 +153,7 @@ function Navbar() {
                       textDecoration:'none'
                     }}
                   >
-                    {page}
+                    {page.label}
                   </Typography>
                 </MenuItem>
               ))}
@@ -130,12 +161,12 @@ function Navbar() {
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {navbar.map((page) => (
               <Button
-                key={page}
+                key={page.id}
                 onClick={handleCloseNavMenu}
                 component={Link} // Use Link for routing
-                to={`/${page.toLowerCase()}`} // Dynamic path based on page name
+                to={`${page.path.toLowerCase()}`} // Dynamic path based on page name
                 sx={{
                   my: 2,
                   display: 'block',
@@ -148,7 +179,7 @@ function Navbar() {
                   color: '#274C5B',
                 }}
               >
-                {page}
+                {page.label}
               </Button>
             ))}
           </Box>
