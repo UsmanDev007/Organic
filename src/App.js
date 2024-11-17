@@ -7,20 +7,23 @@ import Shop from "./Pages/Shop";
 import Project from "./Pages/Project";
 import Contact from "./Pages/Contact";
 import Footer from "./Components/Footer";
+import { CardProvider } from "./CardContext";
+
 function App() {
   return (
    <>
-       
-      <Navbar />
+     <CardProvider>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services/>} />
-        <Route path="/shop/:id" element={<Shop />} />
+        <Route path="/shop" element={<Shop />} />
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer/>   
+      <Footer/>
+      </CardProvider>
    </>    
   );
 }
