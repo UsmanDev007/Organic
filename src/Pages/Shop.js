@@ -52,6 +52,7 @@ const Shop = () => {
              <span>Quantity:</span>
               <TextField type='number'/>
               <Button>Add To Cart</Button>
+              
            </Box>
         </Box>
 
