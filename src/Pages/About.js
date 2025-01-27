@@ -5,6 +5,7 @@ import StyledButton from '../Components/Button'
 import ChemicalPlant from '../Images/Chemical Plant.svg'
 import Grapes from '../Images/Grapes.svg'
 import WhyChoose from '../Components/WhyChoose'
+import Arrow from '../Images/Aerrow.svg'
 import Hero from '../Components/Hero';
 import AboutBanner from '../Images/AboutBanner.svg';
 import Experts from '../Components/Experts'
@@ -112,7 +113,7 @@ const About = () => {
                 </Box>
               </Box>
             </Box> 
-            <StyledButton text="Explore Now" />
+            <StyledButton text="Explore Now" img={Arrow} />
           </Grid2>
         </Grid2>
       </Box>

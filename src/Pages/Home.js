@@ -299,7 +299,7 @@ const HeroSection = () => {
               </Box>
 
             </Box>
-            <StyledButton text="Shop Now" />
+            <StyledButton text="Shop Now" img={Arrow} />
           </Grid2>
 
         </Grid2>

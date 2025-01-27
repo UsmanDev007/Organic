@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Arrow from '../Images/Aerrow.svg'
 const StyledButton=styled.button`
 width: 220px;
 height: 79px;
@@ -13,16 +12,17 @@ font-size: 20px;
 font-weight: 700;
 line-height: 23.44px;
 display:flex;
+cursor: pointer;
 justify-content: center;
 align-items: center;
 gap: 4px;
 `
-const Button = ({text}) => {
+const Button = ({text,img}) => {
   return (
     
        <StyledButton>
           {text}
-          <img src={Arrow} alt=""  />
+          <img src={img} alt="" />
        </StyledButton>
        
     
