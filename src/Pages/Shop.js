@@ -1,4 +1,4 @@
-import { Box, Typography, TextField } from "@mui/material";
+import { Box, Typography, TextField, Button } from "@mui/material";
 import React, { useContext, useEffect, useState } from "react";
 import StyledButton from "../Components/Button";
 import { useParams } from "react-router-dom";
@@ -7,14 +7,15 @@ import Hero from "../Components/Hero";
 
 import { CardContext } from "../CardContext";
 import Star from "../Images/Star.svg";
+import PopUp from "../Components/PopUp";
 
 const Shop = () => {
   const { id } = useParams();
-  const { selectedCard } = useContext(CardContext);
+  const { selectedCard,SetCount } = useContext(CardContext);
   const [data, setData] = useState(selectedCard || {});
-
+  
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to top
+    window.scrollTo(0, 0);
     fetch("/VegCards.json")
       .then((response) => {
         if (!response.ok) {
@@ -34,7 +35,17 @@ const Shop = () => {
         console.log(error);
       });
   }, [id, selectedCard]);
-
+  // handle Popup states
+  const [openPopUp, setOpenPopUp] = useState(false);
+  const increment =()=>{
+    SetCount((prevCount) => prevCount + 1)
+  }
+  const handleOpenPopUp = () => {
+    setOpenPopUp(true);
+    increment();
+  }
+  const handleClosePopUp = () => setOpenPopUp(false);
+    
   // Render component
   return (
     <>
@@ -70,18 +81,18 @@ const Shop = () => {
 
           {/* Discounted Price */}
           <Typography
-          sx={{
-            fontFamily: "Roboto",
-            fontSize: "20px",
-            fontWeight: 700,
-            lineHeight: "23.44px",
-            textAlign: "left",
-            textUnderlinePosition: "from-font",
-            textDecorationSkipInk: "none",
-            color: "#274C5B",
-          }}
+            sx={{
+              fontFamily: "Roboto",
+              fontSize: "20px",
+              fontWeight: 700,
+              lineHeight: "23.44px",
+              textAlign: "left",
+              textUnderlinePosition: "from-font",
+              textDecorationSkipInk: "none",
+              color: "#274C5B",
+            }}
           >
-          ${data.afterPrice || "N/A"}
+            ${data.afterPrice || "N/A"}
           </Typography>
 
           {/* Product Description */}
@@ -100,49 +111,15 @@ const Shop = () => {
               marginTop: "20px",
             }}
           >
-            <Typography
-              sx={{
-                fontFamily: "Roboto",
-                fontSize: "20px",
-                fontWeight: 700,
-                lineHeight: "23.44px",
-                textAlign: "left",
-                textUnderlinePosition: "from-font",
-                textDecorationSkipInk: "none",
-                color: "#274C5B",
-              }}
-            >
-              Quantity
-            </Typography>
-
-            <TextField
-              type="number"
-              variant="outlined"
-              size="small"
-              inputProps={{ min: 1 }}
-              defaultValue={1}
-              sx={{
-                borderRadius: "12px",
-                width: "100px",
-                "& .MuiOutlinedInput-root": {
-                  borderRadius: "12px",
-                  padding: "8px",
-                  "& fieldset": {
-                    borderColor: "#274C5B",
-                  },
-                  "&:hover fieldset": {
-                    borderColor: "#274C5B",
-                  },
-                  "&.Mui-focused fieldset": {
-                    borderColor: "#274C5B",
-                  },
-                },
-                "& .MuiInputBase-input": {
-                  padding: "18px",
-                },
-              }}
-            />
-            <StyledButton text="Add to Cart" />
+            <div>
+              <StyledButton text="Add to Cart" onClick={handleOpenPopUp} />
+              <PopUp
+                open={openPopUp}
+                onClose={handleClosePopUp}
+                title="Your Cart"
+              >
+              </PopUp>
+            </div>
           </Box>
         </Box>
       </Box>

@@ -29,7 +29,7 @@ const Contact = () => {
           <Grid container spacing={6}>
             <Grid item xs={12} md={6} >
               <LableStyle >Full Name*</LableStyle>
-              <TextField fullWidth  label="yourname" sx={{
+              <TextField fullWidth   sx={{
                  borderRadius: '16px',
                  border: '1px solid #7EB693',
                  color: '#7EB693',
@@ -55,7 +55,7 @@ const Contact = () => {
                  '& .MuiOutlinedInput-notchedOutline': {
                    border: 'none',
                  },
-              }} label="example@gmail.com" />
+              }} />
             </Grid>
             <Grid item xs={12} md={6}>
               <LableStyle>Company*</LableStyle>
@@ -70,7 +70,7 @@ const Contact = () => {
                  '& .MuiOutlinedInput-notchedOutline': {
                    border: 'none',
                  },
-              }} label="yourcompany" />
+              }}  />
             </Grid>
             <Grid item xs={12} md={6}>
               <LableStyle>Subject*</LableStyle>
@@ -85,7 +85,7 @@ const Contact = () => {
                  '& .MuiOutlinedInput-notchedOutline': {
                    border: 'none',
                  },
-              }} label="yoursubject" />
+              }} />
             </Grid>
             <Grid item xs={12}>
               <LableStyle>Message*</LableStyle>

@@ -12,10 +12,10 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState ,useContext} from 'react';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import { CardContext } from '../CardContext';
 
-// const navbar = ['Home', 'About', 'Services', 'Shop', 'Project', 'Contact'];
 const navbar = [
     {
       id:"1",
@@ -49,6 +49,7 @@ const navbar = [
     }
 ];
 function Navbar() {
+  const { Count } = useContext(CardContext);
   const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -105,7 +106,7 @@ function Navbar() {
                 textAlign: 'left',
               }}
             >
-              Cart(0)
+              Cart({Count})
             </Typography>
           </Box>
 
@@ -114,7 +115,7 @@ function Navbar() {
               flexGrow: 1, 
               display: { xs: 'flex', md: 'none' }, 
               justifyContent: 'flex-end',
-              maxWidth: '100%' // Prevent overflow of icon
+              maxWidth: '100%'
             }}>
             <IconButton
               size="large"
@@ -123,9 +124,9 @@ function Navbar() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
-              sx={{ color: '#274C5B', padding: 0 }} // Adjust padding to prevent overflow
+              sx={{ color: '#274C5B', padding: 0 }}
             >
-              <MenuIcon sx={{ fontSize: '30px' }} /> {/* Ensure icon size doesn't overflow */}
+              <MenuIcon sx={{ fontSize: '30px' }} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -141,8 +142,8 @@ function Navbar() {
               {navbar.map((page) => (
                 <MenuItem key={page.id} onClick={handleCloseNavMenu}>
                   <Typography
-                     component={Link} // Use Link for routing
-                     to={`${page.path.toLowerCase()}`} // Dynamic path based on page name
+                     component={Link}
+                     to={`${page.path.toLowerCase()}`}
                     sx={{
                       fontFamily: 'Roboto',
                       fontSize: '20px',
@@ -160,7 +161,7 @@ function Navbar() {
             </Menu>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent:"center" } }}>
             {navbar.map((page) => (
               <Button
                 key={page.id}
@@ -214,7 +215,7 @@ function Navbar() {
                 textAlign: 'left',
               }}
             >
-              Cart(0)
+              Count({Count})
             </Typography>
           </Box>
         </Toolbar>
