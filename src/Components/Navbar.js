@@ -215,7 +215,7 @@ function Navbar() {
                 textAlign: 'left',
               }}
             >
-              Count({Count})
+              Cart({Count})
             </Typography>
           </Box>
         </Toolbar>

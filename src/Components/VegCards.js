@@ -83,7 +83,6 @@ const VegCards = () => {
                 >
                   <Box sx={{ position: "absolute", top: 14, left: 14 }}>
                     <Chip
-                      avatar
                       label={item.type}
                       sx={{
                         borderRadius: "8px",
