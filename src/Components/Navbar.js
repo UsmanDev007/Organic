@@ -39,11 +39,6 @@ const navbar = [
     },
     {
       id:"5",
-      label:"Project",
-      path:"/project"
-    },
-    {
-      id:"6",
       label:"Contact",
       path:"/contact"
     }
