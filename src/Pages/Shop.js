@@ -2,11 +2,11 @@ import { Box, Typography, TextField, Button } from "@mui/material";
 import React, { useContext, useEffect, useState } from "react";
 import StyledButton from "../Components/Button";
 import { useParams } from "react-router-dom";
-import Shopbg from "../Images/shopbg.svg";
+import Shopbg from "../Images/shopbg.png";
 import Hero from "../Components/Hero";
 
 import { CardContext } from "../CardContext";
-import Star from "../Images/Star.svg";
+import Star from "../Images/Star.png";
 import PopUp from "../Components/PopUp";
 
 const Shop = () => {

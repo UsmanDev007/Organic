@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import Star from "../Images/Star.svg";
+import Star from "../Images/Star.png";
 import { CardContext } from "../CardContext";
 const VegCards = () => {
   const [data, setData] = useState(null);

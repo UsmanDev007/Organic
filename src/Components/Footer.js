@@ -1,5 +1,5 @@
 import React from "react";
-import FooterImg from "../Images/Background.svg";
+import FooterImg from "../Images/Background.png";
 import {
   Box,
   Button,
@@ -8,11 +8,11 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import Logo from "../Images/Logo.svg";
-import insta from "../Images/insta.svg";
-import fb from "../Images/fb.svg";
-import twitter from "../Images//twitter.svg";
-import pintrest from "../Images/pintrest.svg";
+import Logo from "../Images/Logo.png";
+import insta from "../Images/insta.png";
+import fb from "../Images/fb.png";
+import twitter from "../Images//twitter.png";
+import pintrest from "../Images/pintrest.png";
 const Footer = () => {
   return (
     <>

@@ -1,13 +1,13 @@
 import React from 'react'
 import { Box,Grid2,Typography } from '@mui/material';
-import Tractor from '../Images/Tractor.svg'
+import Tractor from '../Images/Tractor.png'
 import StyledButton from '../Components/Button'
-import ChemicalPlant from '../Images/Chemical Plant.svg'
-import Grapes from '../Images/Grapes.svg'
+import ChemicalPlant from '../Images/Chemical Plant.png'
+import Grapes from '../Images/Grapes.png'
 import WhyChoose from '../Components/WhyChoose'
-import Arrow from '../Images/Aerrow.svg'
+import Arrow from '../Images/Aerrow.png'
 import Hero from '../Components/Hero';
-import AboutBanner from '../Images/AboutBanner.svg';
+import AboutBanner from '../Images/AboutBanner.png';
 import Experts from '../Components/Experts'
 const About = () => {
   return (

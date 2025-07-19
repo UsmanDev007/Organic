@@ -1,51 +1,51 @@
 [
     {
-      "person":"/Images/Person1.svg",
+      "person":"/Images/Person1.png",
        "text":"Giovani Bacardo",
        "subtext":"Farmer",
-       "insta":"/Images/Insta.svg",
-       "fb":"/Images/Fb.svg",
-       "tweet":"/Images/Vector.svg"
+       "insta":"/Images/Insta.png",
+       "fb":"/Images/Fb.png",
+       "tweet":"/Images/Vector.png"
 
     },
     {
-        "person":"/Images/Person2.svg",
+        "person":"/Images/Person2.png",
        "text":"Marianne Loreno",
        "subtext":"Farmer",
-       "insta":"/Images/Insta.svg",
-       "fb":"/Images/Fb.svg",
-       "tweet":"/Images/Vector.svg"
+       "insta":"/Images/Insta.png",
+       "fb":"/Images/Fb.png",
+       "tweet":"/Images/Vector.png"
     },
     {
-        "person":"/Images/Person3.svg",
+        "person":"/Images/Person3.png",
         "text":"Riga Pelore",
         "subtext":"Farmer",
-        "insta":"/Images/Insta.svg",
-        "fb":"/Images/Fb.svg",
-        "tweet":"/Images/Vector.svg"
+        "insta":"/Images/Insta.png",
+        "fb":"/Images/Fb.png",
+        "tweet":"/Images/Vector.png"
     },
     {
-        "person":"/Images/Person4.svg",
+        "person":"/Images/Person4.png",
         "text":"Keira Knightley",
         "subtext":"Designer",
-        "insta":"/Images/Insta.svg",
-        "fb":"/Images/Fb.svg",
-        "tweet":"/Images/Vector.svg"
+        "insta":"/Images/Insta.png",
+        "fb":"/Images/Fb.png",
+        "tweet":"/Images/Vector.png"
     },
     {
-        "person":"/Images/Person5.svg",
+        "person":"/Images/Person5.png",
         "text":"Scott Lawrence",
         "subtext":"Farmer",
-        "insta":"/Images/Insta.svg",
-        "fb":"/Images/Fb.svg",
-        "tweet":"/Images/Vector.svg"
+        "insta":"/Images/Insta.png",
+        "fb":"/Images/Fb.png",
+        "tweet":"/Images/Vector.png"
     },
     {
-        "person":"/Images/Person6.svg",
+        "person":"/Images/Person6.png",
         "text":"Karen Allen",
         "subtext":"Designer",
-        "insta":"/Images/Insta.svg",
-        "fb":"/Images/Fb.svg",
-        "tweet":"/Images/Vector.svg"
+        "insta":"/Images/Insta.png",
+        "fb":"/Images/Fb.png",
+        "tweet":"/Images/Vector.png"
     }
 ]

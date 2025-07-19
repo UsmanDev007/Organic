@@ -1,21 +1,21 @@
 import React from "react";
 import { Box, Typography, Button, Container, Grid2 } from "@mui/material";
 import { styled } from "@mui/system";
-import Banner from "../Images/Group17.svg";
-import Arrow from "../Images/Aerrow.svg";
-import Natural from "../Images/Natural.svg";
-import Offer from "../Images/Offer.svg";
-import About from "../Images/About.svg";
-import Food from "../Images/FoodIcon.svg";
+import Banner from "../Images/Group17.png";
+import Arrow from "../Images/Aerrow.png";
+import Natural from "../Images/Natural.png";
+import Offer from "../Images/Offer.png";
+import About from "../Images/About.png";
+import Food from "../Images/FoodIcon.png";
 import StyledButton from "../Components/Button";
-import Quality from "../Images/QualityIcon.svg";
-import Lady from "../Images/Lady.svg";
+import Quality from "../Images/QualityIcon.png";
+import Lady from "../Images/Lady.png";
 import VegCards from "../Components/VegCards";
-import Testmonial from "../Images/TestmonialBackground.svg";
-import Star from "../Images/Star.svg";
-import YellowBottle from "../Images/YellowBottle.svg";
-import Leaf from "../Images/Leaf.svg";
-import Cookies from "../Images/Cookies.svg";
+import Testmonial from "../Images/TestmonialBackground.png";
+import Star from "../Images/Star.png";
+import YellowBottle from "../Images/YellowBottle.png";
+import Leaf from "../Images/Leaf.png";
+import Cookies from "../Images/Cookies.png";
 const HeroContainer = styled(Box)(({ theme }) => ({
   position: "relative",
   display: "flex",

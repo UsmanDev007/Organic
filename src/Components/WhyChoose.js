@@ -1,11 +1,11 @@
 import { Box, Grid2, Typography } from '@mui/material'
 import React from 'react'
-import icon from '../Images/Icon.svg'
-import Return from '../Images/Return.svg'
-import Fresh from '../Images/Fresh.svg'
-import Support from '../Images/Support.svg'
-import Secure from '../Images/Secure.svg'
-import ChooseGreen from '../Images/ChooseGreen.svg'
+import icon from '../Images/Icon.png'
+import Return from '../Images/Return.png'
+import Fresh from '../Images/Fresh.png'
+import Support from '../Images/Support.png'
+import Secure from '../Images/Secure.png'
+import ChooseGreen from '../Images/ChooseGreen.png'
 import '../App.css'
 const WhyChoose = () => {
   return (

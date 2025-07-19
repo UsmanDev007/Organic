@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../Components/Hero'
-import HeroBg from '../Images/HeroBg.svg'
+import HeroBg from '../Images/HeroBg.png'
 import styled from 'styled-components';
 import { Box,TextField, Container,  Grid, Button } from '@mui/material';
 const Contact = () => {
