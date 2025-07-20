@@ -1,6 +1,6 @@
 [
     {
-      "person":"/Images/Person1.png",
+      "person":"/Images/Person1.jpg",
        "text":"Giovani Bacardo",
        "subtext":"Farmer",
        "insta":"/Images/Insta.png",
@@ -9,7 +9,7 @@
 
     },
     {
-        "person":"/Images/Person2.png",
+        "person":"/Images/Person2.jpg",
        "text":"Marianne Loreno",
        "subtext":"Farmer",
        "insta":"/Images/Insta.png",
@@ -17,7 +17,7 @@
        "tweet":"/Images/Vector.png"
     },
     {
-        "person":"/Images/Person3.png",
+        "person":"/Images/Person3.jpg",
         "text":"Riga Pelore",
         "subtext":"Farmer",
         "insta":"/Images/Insta.png",
@@ -25,7 +25,7 @@
         "tweet":"/Images/Vector.png"
     },
     {
-        "person":"/Images/Person4.png",
+        "person":"/Images/Person4.jpg",
         "text":"Keira Knightley",
         "subtext":"Designer",
         "insta":"/Images/Insta.png",
@@ -33,7 +33,7 @@
         "tweet":"/Images/Vector.png"
     },
     {
-        "person":"/Images/Person5.png",
+        "person":"/Images/Person5.jpg",
         "text":"Scott Lawrence",
         "subtext":"Farmer",
         "insta":"/Images/Insta.png",
@@ -41,7 +41,7 @@
         "tweet":"/Images/Vector.png"
     },
     {
-        "person":"/Images/Person6.png",
+        "person":"/Images/Person6.jpg",
         "text":"Karen Allen",
         "subtext":"Designer",
         "insta":"/Images/Insta.png",

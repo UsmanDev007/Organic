@@ -3,8 +3,8 @@ import { Box, Typography, Button, Container, Grid2 } from "@mui/material";
 import { styled } from "@mui/system";
 import Banner from "../Images/Group17.png";
 import Arrow from "../Images/Aerrow.png";
-import Natural from "../Images/Natural.png";
-import Offer from "../Images/Offer.png";
+import Natural from "../Images/Natural.jpg";
+import Offer from "../Images/Offer.jpg";
 import About from "../Images/About.png";
 import Food from "../Images/FoodIcon.png";
 import StyledButton from "../Components/Button";
@@ -170,7 +170,7 @@ const HeroSection = () => {
                 fontWeight: 400,
                 lineHeight: "49.06px",
                 textAlign: "left",
-                color: "#7EB693",
+                color: "white",
                 marginLeft: "7%",
                 fontStyle: "italic",
               }}
@@ -185,7 +185,7 @@ const HeroSection = () => {
                 lineHeight: "46.88px",
                 textAlign: "left",
                 marginLeft: "7%",
-                color: "#274C5B",
+                color: "white",
                 width: "250px",
                 height: "94px",
               }}
