@@ -1,9 +1,9 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from "react";
 import Navbar from "./Components/Navbar";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Footer from "./Components/Footer";
 import { CardProvider } from "./CardContext";
-import CustomSkeleton from './Components/CustomSkeleton';
+import CustomSkeleton from "./Components/CustomSkeleton";
 // Dynamically import the pages
 const Home = React.lazy(() => import("./Pages/Home"));
 const About = React.lazy(() => import("./Pages/About"));
@@ -11,8 +11,15 @@ const Services = React.lazy(() => import("./Pages/Services"));
 const Shop = React.lazy(() => import("./Pages/Shop"));
 const Contact = React.lazy(() => import("./Pages/Contact"));
 
-
 function App() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, [pathname]);
   return (
     <>
       <CardProvider>
@@ -31,7 +38,5 @@ function App() {
     </>
   );
 }
-
-
 
 export default App;

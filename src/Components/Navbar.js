@@ -111,11 +111,11 @@ function Navbar() {
               PaperProps={{
                 sx: {
                   height: "100vh",
-                  width: "100vw",
+                  width: "70vw",
                   maxWidth: "100%",
                   backgroundColor: "white",
-                  paddingTop: "20px",
-                  textAlign: "center",
+                  display:"flex",
+                  justifyContent:"center",
                 },
               }}
             >

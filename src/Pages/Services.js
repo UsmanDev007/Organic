@@ -45,8 +45,8 @@ const Services = () => {
       <Box sx={{ maxWidth: '1920px', mx: 'auto', mt: '3%' }}>
         <Grid2 container justifyContent="center">
           {/* Child1 */}
-          <Grid2 size={{ xs: 12, sm: 6, md: 4 }} justifyItems={{ md: "end" }} alignContent="center">
-            <img src={Milk} alt="" />
+          <Grid2 size={{ xs: 12, sm: 6, md: 4 }}  justifyItems={{ xs:"center",md: "end" }}  alignContent="center">
+            <img src={Milk} alt="" style={{display:'block'}} />
             <Typography sx={{
               fontFamily: "Roboto",
               fontSize: "25px",
@@ -63,14 +63,15 @@ const Services = () => {
               lineHeight: "29.77px",
               textAlign: "right",
               color: '#525C60',
-              width: '350px'
+              maxWidth: '320px',
+              width:"100%"
 
             }}>
               Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut
               perspiciatis
             </Typography>
 
-            <img src={OnlineStore} alt="" />
+            <img src={OnlineStore} alt=""  style={{display:'block'}} />
             <Typography sx={{
               fontFamily: "Roboto",
               fontSize: "25px",
@@ -88,14 +89,15 @@ const Services = () => {
               lineHeight: "29.77px",
               textAlign: "right",
               color: '#525C60',
-              width: '350px'
+              maxWidth: '320px',
+              width:"100%"
 
             }}>
               Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut
               perspiciatis
             </Typography>
 
-            <img src={Derlivery} alt="" />
+            <img src={Derlivery} alt=""  style={{display:'block'}} />
             <Typography
               sx={{
                 fontFamily: "Roboto",
@@ -114,7 +116,8 @@ const Services = () => {
               lineHeight: "29.77px",
               textAlign: "right",
               color: '#525C60',
-              width: '350px'
+             maxWidth: '320px',
+              width:"100%"
 
             }}>
               Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium. Sed ut
@@ -138,8 +141,8 @@ const Services = () => {
           </Grid2>
 
           {/* Child3 */}
-          <Grid2 size={{ xs: 12, sm: 6, md: 4 }} justifyItems="start" alignContent="center">
-            <img src={Agri} alt="" />
+          <Grid2 size={{ xs: 12, sm: 6, md: 4 }} justifyItems={{xs:'center',md:"start"}} alignContent="center">
+            <img src={Agri} alt="" style={{display:'block'}} />
             <Typography
               sx={{
                 fontFamily: "Roboto",
@@ -165,7 +168,7 @@ const Services = () => {
               perspiciatis
             </Typography>
 
-            <img src={Wheat} alt="" />
+            <img src={Wheat} alt="" style={{display:'block'}} />
             <Typography
               sx={{
                 fontFamily: "Roboto",
@@ -191,7 +194,7 @@ const Services = () => {
               perspiciatis
             </Typography>
 
-            <img src={veg} alt="" />
+            <img src={veg} alt="" style={{display:'block'}} />
             <Typography
               sx={{
                 fontFamily: "Roboto",
